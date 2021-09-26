@@ -25,3 +25,14 @@ document.getElementById('btn_rotateright').onclick = function(){
         document.querySelector('.initialization-indicator').id = 'turnright';
     }
 }
+
+let optionsPanelOpen = false;
+document.getElementById('btn_moreoptions').onclick = function(){
+    if (optionsPanelOpen === false) {
+        document.getElementById('options_panel').style = 'display: block;';
+        optionsPanelOpen = true;
+    } else {
+        document.getElementById('options_panel').style = 'display: none;';
+        optionsPanelOpen = false;
+    }
+}
