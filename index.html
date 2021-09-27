@@ -14,25 +14,23 @@
             overflow: hidden;
             user-select: none !important;
             font-family: 'Inter', sans-serif;
+            box-sizing: border-box !important;
+            outline: none !important;
         }
         @keyframes pol {
             from{
                 transform: scale(1) rotate(0);
-                border: 6px solid black;
             }
             to{
                 transform: scale(1) rotate(180deg);
-                border: 6px solid black;
             }
         }
         @keyframes poldeux {
             from{
                 transform: scale(1) rotate(0);
-                border: 6px solid black;
             }
             to{
                 transform: scale(1) rotate(-180deg);
-                border: 6px solid black;
             }
         }
         @keyframes sec {
@@ -97,9 +95,15 @@
     </div>
 
     <div id="options_panel">
-        <div class="option-panel-item">Largeur de ligne</div>
+        <div id="btnChangeWeight" class="option-panel-item">Largeur de ligne</div>
         <div class="option-panel-item">Modifier la vitesse</div>
         <div class="option-panel-item">Changer d'animation</div>
+    </div>
+
+    <div id="borderWeightPanel">
+        <div class="options-panel-item-panel-title">Largeur de ligne</div>
+        <input type="text" name="borderWeightInput" id="borderWeightInput" class="options-panel-item-panel-input" value="6">
+        <input type="submit" value="Appliquer" class="options-panel-item-panel-submit" id="borderWeightSubmit">
     </div>
 
     <script src="./script.js"></script>

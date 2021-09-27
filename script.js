@@ -36,3 +36,14 @@ document.getElementById('btn_moreoptions').onclick = function(){
         optionsPanelOpen = false;
     }
 }
+
+document.getElementById('borderWeightSubmit').onclick = function(){
+    document.querySelectorAll('.shape').forEach(function(shape) {
+        shape.style.border = `${document.getElementById('borderWeightInput').value}px solid black`;
+    });
+}
+
+document.getElementById('btnChangeWeight').onclick = function(){
+    document.getElementById('options_panel').style.opacity = '0';
+    document.getElementById('borderWeightPanel').style = 'display: block;';
+}
