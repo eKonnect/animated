@@ -41,9 +41,16 @@ document.getElementById('borderWeightSubmit').onclick = function(){
     document.querySelectorAll('.shape').forEach(function(shape) {
         shape.style.border = `${document.getElementById('borderWeightInput').value}px solid black`;
     });
+    document.getElementById('options_panel').style.opacity = '1';
+    document.getElementById('borderWeightPanel').style.opacity = '0';
+    setTimeout("foodeux()", 150);
+}
+
+function foodeux(){
+    document.getElementById('borderWeightPanel').style = 'display: none;';
 }
 
 document.getElementById('btnChangeWeight').onclick = function(){
     document.getElementById('options_panel').style.opacity = '0';
-    document.getElementById('borderWeightPanel').style = 'display: block;';
+    document.getElementById('borderWeightPanel').style = 'display: block; opacity: 1; transition: .15s !important;';
 }
