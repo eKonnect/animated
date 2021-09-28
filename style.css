@@ -89,10 +89,8 @@
     background-color: blueviolet;
 }
 .option-panel-item:active{
-    background-color: rgb(0, 0, 207);
+    background-color: rgba(137, 43, 226, .85);
 }
-
-/* invert bg */
 
 @keyframes der {
     from{
@@ -107,7 +105,7 @@
     border: 6px solid black;
 }
 
-#borderWeightPanel{
+.corner-panel{
     position: absolute;
     bottom: 110px; right: 25px;
     width: 200px;
@@ -131,7 +129,7 @@
     width: 90%;
     height: max-content;
     margin-left: 5%;
-    border-bottom: 2px solid rgba(255, 255, 255, .75);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding-bottom: 5px;
 }
 
@@ -167,6 +165,7 @@
     border: 2px solid blueviolet;
     color: white;
     cursor: pointer;
+    font-family: 'Inter Regular';
     transition: .15s linear;
 }
 .options-panel-item-panel-submit:focus{

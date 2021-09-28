@@ -46,11 +46,29 @@ document.getElementById('borderWeightSubmit').onclick = function(){
     setTimeout("foodeux()", 150);
 }
 
+document.getElementById('speedSubmit').onclick = function(){
+    document.querySelectorAll('.shape').forEach(function(shape) {
+        shape.style.animationDuration = `${document.getElementById('speedInput').value}s`;
+    });
+    document.getElementById('options_panel').style.opacity = '1';
+    document.getElementById('speedPanel').style.opacity = '0';
+    setTimeout("footrois()", 150);
+}
+
 function foodeux(){
     document.getElementById('borderWeightPanel').style = 'display: none;';
+}
+
+function footrois(){
+    document.getElementById('speedPanel').style = 'display: none;';
 }
 
 document.getElementById('btnChangeWeight').onclick = function(){
     document.getElementById('options_panel').style.opacity = '0';
     document.getElementById('borderWeightPanel').style = 'display: block; opacity: 1; transition: .15s !important;';
+}
+
+document.getElementById('btnChangeSpeed').onclick = function(){
+    document.getElementById('options_panel').style.opacity = '0';
+    document.getElementById('speedPanel').style = 'display: block; opacity: 1; transition: .15s !important;';
 }

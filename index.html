@@ -32,18 +32,18 @@
         }
         @keyframes pol {
             from{
-                transform: scale(1) rotate(0);
+                transform: rotate(0deg);
             }
             to{
-                transform: scale(1) rotate(180deg);
+                transform: rotate(180deg);
             }
         }
         @keyframes poldeux {
             from{
-                transform: scale(1) rotate(0);
+                transform: rotate(0);
             }
             to{
-                transform: scale(1) rotate(-180deg);
+                transform: rotate(-180deg);
             }
         }
         @keyframes sec {
@@ -108,15 +108,21 @@
     </div>
 
     <div id="options_panel">
-        <div id="btnChangeWeight" class="option-panel-item">Largeur de ligne</div>
-        <div class="option-panel-item">Modifier la vitesse</div>
-        <div class="option-panel-item">Changer d'animation</div>
+        <div id="btnChangeWeight" class="option-panel-item">Epaisseur de trait</div>
+        <div id="btnChangeSpeed" class="option-panel-item">Modifier la vitesse</div>
+        <div id="btnChangeAnimation" class="option-panel-item" style="background-color: gray !important; cursor: default !important;">Changer d'animation</div>
     </div>
 
-    <div id="borderWeightPanel">
-        <div class="options-panel-item-panel-title">Largeur de ligne</div>
+    <div id="borderWeightPanel" class="corner-panel">
+        <div class="options-panel-item-panel-title">Epaisseur de trait</div>
         <input type="text" name="borderWeightInput" id="borderWeightInput" class="options-panel-item-panel-input" value="6">
         <input type="submit" value="Appliquer" class="options-panel-item-panel-submit" id="borderWeightSubmit">
+    </div>
+
+    <div id="speedPanel" class="corner-panel">
+        <div class="options-panel-item-panel-title">Modifier la vitesse</div>
+        <input type="text" name="speedInput" id="speedInput" class="options-panel-item-panel-input" value="15">
+        <input type="submit" value="Appliquer" class="options-panel-item-panel-submit" id="speedSubmit">
     </div>
 
     <script src="./script.js"></script>
