@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animations.css">
     <style>
         *{
             overflow: hidden;
@@ -29,22 +30,6 @@
             font-family: 'Inter', sans-serif;
             box-sizing: border-box !important;
             outline: none !important;
-        }
-        @keyframes pol {
-            from{
-                transform: rotate(0deg);
-            }
-            to{
-                transform: rotate(180deg);
-            }
-        }
-        @keyframes poldeux {
-            from{
-                transform: rotate(0);
-            }
-            to{
-                transform: rotate(-180deg);
-            }
         }
         @keyframes sec {
             from{
@@ -64,6 +49,8 @@
     </style>
 </head>
 <body>
+
+    <div id="superdiv"></div>
 
     <div class="shape pol" style="overflow: visible !important; position: absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0);"></div>
     <div class="shape pol" style="animation-delay: .5s; overflow: visible !important; position: absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; height: 100%;"></div>
@@ -110,7 +97,7 @@
     <div id="options_panel">
         <div id="btnChangeWeight" class="option-panel-item">Epaisseur de trait</div>
         <div id="btnChangeSpeed" class="option-panel-item">Modifier la vitesse</div>
-        <div id="btnChangeAnimation" class="option-panel-item" style="background-color: gray !important; cursor: default !important;">Changer d'animation</div>
+        <div id="btnChangeAnimation" class="option-panel-item">Changer d'animation</div>
     </div>
 
     <div id="borderWeightPanel" class="corner-panel">

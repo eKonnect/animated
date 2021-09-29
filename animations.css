@@ -1,0 +1,33 @@
+@keyframes pol {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+@keyframes poldeux {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes jan {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(180deg) rotateY(-180deg);
+    }
+}
+@keyframes jandeux {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(-180deg) rotateY(180deg);
+    }
+}

@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
+#superdiv{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    z-index: 199999;
+    background-color: rgb(31, 31, 31);
+    animation: superdiv 5s linear forwards;
+}
+
+@keyframes superdiv {
+    from{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    90%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    95%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
 .corner-btn-bar{
     position: fixed;
     bottom: 25px; right: 25px;
