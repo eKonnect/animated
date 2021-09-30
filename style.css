@@ -7,7 +7,7 @@
     margin: 0; padding: 0;
     z-index: 199999;
     background-color: rgb(31, 31, 31);
-    animation: superdiv 5s linear forwards;
+    animation: superdiv 3s linear forwards;
 }
 
 @keyframes superdiv {
@@ -35,7 +35,6 @@
     width: max-content; height: 60px;
     margin: 0; padding: 0;
     background-color: rgb(31, 31, 31);
-    /* opacity: .5; */
     /* backdrop-filter: blur(4px); */
     border-radius: 8px;
     display: flex;
@@ -72,12 +71,12 @@
     width: 30px;
 }
 
-.pol{
-    animation: pol 15s infinite ease-in-out;
+.paul{
+    animation: paul 15s infinite ease-in-out;
 }
 
-.poldeux{
-    animation: poldeux 15s infinite ease-in-out;
+.pauldeux{
+    animation: pauldeux 15s infinite ease-in-out;
 }
 
 .sec{

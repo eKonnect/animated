@@ -1,4 +1,4 @@
-@keyframes pol {
+@keyframes paul {
     from{
         transform: rotate(0deg);
     }
@@ -6,7 +6,7 @@
         transform: rotate(180deg);
     }
 }
-@keyframes poldeux {
+@keyframes pauldeux {
     from{
         transform: rotate(0);
     }
@@ -15,7 +15,7 @@
     }
 }
 
-@keyframes jan {
+@keyframes jean {
     from{
         transform: rotateX(0deg) rotateY(0deg);
     }
@@ -23,7 +23,42 @@
         transform: rotateX(180deg) rotateY(-180deg);
     }
 }
-@keyframes jandeux {
+@keyframes jeandeux {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
+
+@keyframes magalie {
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    to{
+        transform: scale(.5) rotate(90deg);
+        width: 0; height: 0;
+    }
+}
+@keyframes magaliedeux {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(180deg) rotateY(0deg);
+    }
+}
+
+@keyframes mohamed {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(180deg) rotateY(-180deg);
+    }
+}
+@keyframes mohameddeux {
     from{
         transform: rotateX(0deg) rotateY(0deg);
     }
