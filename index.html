@@ -50,7 +50,11 @@
 </head>
 <body>
 
-    <div id="superdiv"></div>
+    <div id="superdiv">
+        <div id="loading"></div>
+        <img class="welcome-logo" src="./img/electron_logo.png">
+        <p class="welcome-tip">Firefox est grandement déconseillé.</p>
+    </div>
 
     <div class="shape paul" style="overflow: visible !important; position: absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0);"></div>
     <div class="shape paul" style="animation-delay: .5s; overflow: visible !important; position: absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100%; height: 100%;"></div>
@@ -112,11 +116,6 @@
         <div class="options-panel-item-panel-title">Changer l'anim.</div>
         <input type="text" name="speedInput" id="animationInput" class="options-panel-item-panel-input" value="1">
         <input type="submit" value="Appliquer" class="options-panel-item-panel-submit" id="animationSubmit">
-    </div>
-
-    <div id="notif" class="notif">
-        <p>Firefox est déconseillé - Utilisez Chrome</p>
-        <div class="notif-underlay"></div>
     </div>
 
     <script src="./script.js"></script>
