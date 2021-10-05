@@ -43,10 +43,11 @@
 }
 @keyframes magaliedeux {
     from{
-        transform: rotateX(0deg) rotateY(0deg);
+        transform: scale(1) rotate(0deg);
     }
     to{
-        transform: rotateX(180deg) rotateY(0deg);
+        transform: scale(.5) rotate(-90deg);
+        width: 0; height: 0;
     }
 }
 
@@ -55,7 +56,7 @@
         transform: rotateX(0deg) rotateY(0deg);
     }
     to{
-        transform: rotateX(180deg) rotateY(-180deg);
+        transform: rotateX(180deg) rotateY(0deg);
     }
 }
 @keyframes mohameddeux {
@@ -63,6 +64,29 @@
         transform: rotateX(0deg) rotateY(0deg);
     }
     to{
-        transform: rotateX(180deg) rotateY(180deg);
+        transform: rotateX(0deg) rotateY(180deg);
+    }
+}
+
+@keyframes sandrine {
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(90deg) scale(.25);
+    }
+    to{
+        transform: rotate(180deg) scale(1);
+    }
+}
+@keyframes sandrinedeux {
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(-90deg) scale(.25);
+    }
+    to{
+        transform: rotate(-180deg) scale(1);
     }
 }
