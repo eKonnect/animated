@@ -1,0 +1,42 @@
+*{
+    overflow: hidden;
+    /* user-select: none !important; */
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box !important;
+    outline: none !important;
+    color: white;
+}
+
+#superdiv{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgb(31, 31, 31);
+    z-index: 199999;
+    animation: onload 3s forwards;
+}
+
+@keyframes onload {
+    from{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    90%{
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.ui-controller{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    padding-left: 25px;
+    background-color: rgb(31, 31, 31);
+}

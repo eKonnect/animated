@@ -91,6 +91,7 @@
     <div class="corner-btn-bar">
         <!-- <div class="corner-btn" id="btn_rotateleft"><img src="./img/rotate_left_128px.png"></div>
         <div class="corner-btn" id="btn_rotateright"><img src="./img/rotate_right_128px.png"></div> -->
+        <div class="corner-btn" id="btn_account"><img src="./img/safari_128px.png"></div>
         <div class="corner-btn" id="btn_moreoptions"><img src="./img/more_128px.png"></div>
     </div>
 
@@ -98,6 +99,7 @@
         <div id="btnChangeWeight" class="option-panel-item">Epaisseur de trait</div>
         <div id="btnChangeSpeed" class="option-panel-item">Durée de l'animation</div>
         <div id="btnChangeAnimation" class="option-panel-item">Changer d'animation</div>
+        <div id="btnGetRole" class="option-panel-item">Obtenir un rôle</div>
     </div>
 
     <div id="borderWeightPanel" class="corner-panel">
@@ -116,6 +118,16 @@
         <div class="options-panel-item-panel-title">Changer l'anim.</div>
         <input type="text" name="speedInput" id="animationInput" class="options-panel-item-panel-input" value="1">
         <input type="submit" value="Appliquer" class="options-panel-item-panel-submit" id="animationSubmit">
+    </div>
+
+    <div id="rolePanel" class="corner-panel">
+        <div class="options-panel-item-panel-title">Obtenir un rôle</div>
+        <select id="roleSelect">
+            <option value="" selected>Aucun</option>
+            <option value="all-tested">all tester</option>
+            <option value="developpeur">développeur</option>
+        </select>
+        <input type="submit" value="Ajouter" class="options-panel-item-panel-submit" id="roleSubmit">
     </div>
 
     <script src="./script.js"></script>
