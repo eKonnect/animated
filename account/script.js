@@ -1,11 +1,23 @@
-setTimeout("login()", 1000);
+let password = "";
+let username = "";
+
+if (localStorage.getItem('Tom') === null){
+    localStorage.setItem('Tom', '5415085754874');
+}
+
+setTimeout("login()", 0);
 
 function login(){
-    let password = prompt("Indiquez votre pseudo.");
-    if (password === "TWHCLRSTTSDF543246151348664648"){
-        alert("Bienvenue !")
-        document.querySelector('h1').textContent = "Tom";
-        document.querySelector('h2').textContent = "Ami";
+    if (localStorage.getItem('password') !== null){
+        password = localStorage.getItem('password');
+    } else {
+        password = prompt("Indiquez le mot de passe de votre compte.");
+    }
+
+    if (password === localStorage.getItem('Tom')){
+        established("Tom");
+        register();
+        username = "Tom";
     }
     else {
         alert("Mot de passe incorrect.");
@@ -15,4 +27,24 @@ function login(){
 
 function back(){
     location.href = "../index.html";
+}
+
+document.getElementById('btnChangeAccount').onclick = function(){
+    localStorage.removeItem('password');
+    location.href = './account.html';
+}
+
+document.getElementById('btnChangePassword').onclick = function(){
+    password = prompt("Indiquez un nouveau mot de passe pour " + username + ".");
+    localStorage.setItem('Tom', password);
+}
+
+function register(){
+    document.getElementById('superdiv').style.display = 'block';
+    document.querySelector('.ui-standard').style.display = 'block';
+    localStorage.setItem('password', password);
+}
+
+function established(username){
+    localStorage.setItem('username', username);
 }
