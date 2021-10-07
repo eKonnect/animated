@@ -39,6 +39,10 @@ document.getElementById('btnChangePassword').onclick = function(){
     localStorage.setItem('Tom', password);
 }
 
+document.getElementById('btn_back').onclick = function(){
+    back();
+}
+
 function register(){
     document.getElementById('superdiv').style.display = 'block';
     document.querySelector('.ui-standard').style.display = 'block';
