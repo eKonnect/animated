@@ -28,10 +28,12 @@
             <div class="bloc">
                 <p class="big-text">Paul</p>
                 <p class="medium-text">Compte inutile pour le moment</p>
+                <!-- modify this form HTML and place wherever you want your form -->
             </div>
 
             <div class="bloc">
                 <!-- <div id="btnChangeUsername" class="bloc-item">Changer de pseudo</div> -->
+                <div id="btnSubmitFeedback" class="bloc-item">Soumettre un avis</div>
                 <div id="btnChangePassword" class="bloc-item">Changer de mot de passe</div>
             </div>
 
@@ -40,8 +42,29 @@
             </div>
 
         </div>
+
+        <div class="ui-secondary">
+            <div class="mail"></div>
+        </div>
+
     </div>
 
     <script src="./script.js"></script>
 </body>
 </html>
+
+<form
+action="https://formspree.io/f/xzbywykr"
+method="POST"
+>
+<label>
+  Your email:
+  <input type="email" name="_replyto" required>
+</label>
+<label>
+  Your message:
+  <textarea name="message" required></textarea>
+</label>
+<!-- your other form fields go here -->
+<button type="submit">Send</button>
+</form>

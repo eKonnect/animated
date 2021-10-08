@@ -47,8 +47,14 @@ function register(){
     document.getElementById('superdiv').style.display = 'block';
     document.querySelector('.ui-standard').style.display = 'block';
     localStorage.setItem('password', password);
+    setTimeout("openUiSecondary()", 1000);
 }
 
 function established(username){
     localStorage.setItem('username', username);
+}
+
+function openUiSecondary(){
+    document.querySelector('.ui-secondary').style.transform = 'translateX(0%)';
+    document.querySelector('.ui-standard').style.width = '50%';
 }

@@ -63,10 +63,11 @@
     background-color: rgb(31, 31, 31);
     display: none;
     overflow-y: auto;
+    transition: .3s;
 }
 
 .bloc{
-    width: 40%;
+    width: 615px;
     height: max-content;
     margin: 0; padding: 0;
     margin-top: 50px;
@@ -112,13 +113,41 @@
     border-radius: 8px;
     opacity: .75;
     cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(255, 0, 0, .75);
     transition: .3s;
 }
 #btn_back:hover{
     opacity: 1;
+    box-shadow: 0 0 30px 0 rgb(255, 0, 0);
 }
 
 #btn_back>img{
     width: 40px;
     pointer-events: none !important;
+}
+
+.ui-secondary{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgb(35, 35, 35);
+    display: block;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: .3s;
+}
+
+.mail{
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgb(22, 22, 22);
+    border-bottom: 50px solid rgb(35, 35, 35);
+    display: block;
 }
