@@ -1,5 +1,6 @@
 let password = "";
 let username = "";
+let anonymMailSecondary = false;
 
 if (localStorage.getItem('Tom') === null){
     localStorage.setItem('Tom', '5415085754874');
@@ -47,7 +48,7 @@ function register(){
     document.getElementById('superdiv').style.display = 'block';
     document.querySelector('.ui-standard').style.display = 'block';
     localStorage.setItem('password', password);
-    setTimeout("openUiSecondary()", 1000);
+    // setTimeout("openUiSecondary()", 1000);
 }
 
 function established(username){
@@ -57,4 +58,29 @@ function established(username){
 function openUiSecondary(){
     document.querySelector('.ui-secondary').style.transform = 'translateX(0%)';
     document.querySelector('.ui-standard').style.width = '50%';
+    document.getElementById('uiStandardMask').style.display = 'block';
+    document.getElementById('uiStandardMask').style.opacity = '1';
+}
+
+function closeUiSecondary(){
+    document.querySelector('.ui-secondary').style.transform = 'translateX(100%)';
+    document.querySelector('.ui-standard').style.width = '100%';
+    document.getElementById('uiStandardMask').style.opacity = '0';
+    setTimeout("dnoneUiStandardMask()", 300);
+}
+
+function dnoneUiStandardMask(){
+    document.getElementById('uiStandardMask').style.display = 'none';
+}
+
+document.getElementById('btnSubmitFeedback').onclick = function(){
+    openUiSecondary();
+}
+
+document.getElementById('btnCloseMailSecondary').onclick = function(){
+    closeUiSecondary();
+}
+
+document.getElementById('btnSubmitMailSecondary').onclick = function(){
+    document.getElementById('inputUsernameMailSecondary').value = localStorage.getItem('username').toLowerCase() + "@example.com";
 }

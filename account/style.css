@@ -66,6 +66,26 @@
     transition: .3s;
 }
 
+#uiStandardMask{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgba(0, 0, 0, .75);
+    display: none;
+    animation: uiStandardMaskAnim .3s;
+    transition: .3s;
+}
+
+@keyframes uiStandardMaskAnim {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .bloc{
     width: 615px;
     height: max-content;
@@ -133,7 +153,8 @@
     width: 50%;
     height: 100%;
     margin: 0; padding: 0;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(31, 31, 31);
+    border-left: 3px solid rgb(71, 71, 71);
     display: block;
     overflow-y: auto;
     transform: translateX(100%);
@@ -145,9 +166,115 @@
     top: 50px;
     left: 10%;
     width: 80%;
-    height: 100%;
+    height: max-content;
     margin: 0; padding: 0;
     background-color: rgb(22, 22, 22);
-    border-bottom: 50px solid rgb(35, 35, 35);
+    box-shadow: 0 0 20px 0 rgb(22, 22, 22);
+    /* border-bottom: 50px solid rgb(35, 35, 35); */
+    border-radius: 8px;
     display: block;
+}
+
+.mail-submitfeedbackform{
+    width: 80%;
+    margin: 0; padding: 0;
+    margin-top: 50px; margin-bottom: 50px;
+    margin-left: auto; margin-right: auto;
+    padding-left: 10px;
+}
+
+.mail-submitfeedbackform>button{
+    margin: 0; padding: 0;
+    height: 30px;
+    width: 90px;
+    border-radius: 2px;
+    border: none; box-shadow: none;
+    margin-top: 10px; margin-bottom: 5px;
+    margin-right: 7.5px;
+    padding-left: 5px; padding-right: 5px;
+    background-color: rgb(166, 79, 248);
+    border: 2px solid rgb(166, 79, 248);
+    color: white;
+    cursor: pointer;
+    font-family: 'Inter Medium';
+    transition: .15s linear;
+}
+.mail-submitfeedbackform>button:focus{
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0 0 0 2px rgb(166, 79, 248);
+    color: rgb(186, 112, 255);
+    border: 2px solid rgb(166, 79, 248);
+}
+
+.btn-snd{
+    filter: hue-rotate(254deg);
+}
+
+
+.mail-submitfeedbackform>label>input,
+.mail-submitfeedbackform>label>textarea{
+    margin: 0; padding: 0;
+    height: 30px;
+    width: 300px;
+    border: none; box-shadow: none;
+    margin-top: 10px;
+    padding-left: 5px; padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+    border-radius: 2px;
+    transition: .15s linear;
+}
+.mail-submitfeedbackform>label>input:hover,
+.mail-submitfeedbackform>label>textarea:hover{
+    border: 2px solid rgb(160, 66, 248);
+    background-color: rgb(30, 30, 30);
+    color: rgb(160, 66, 248);
+}
+.mail-submitfeedbackform>label>input:focus,
+.mail-submitfeedbackform>label>textarea:focus{
+    background-color: black;
+    box-shadow: 0 0 0 2px rgb(160, 66, 248);
+    color: rgb(160, 66, 248);
+    border: 2px solid rgb(160, 66, 248);
+}
+
+.mail-submitfeedbackform>label>textarea{
+    width: calc(100% - 10px);
+    height: 100px;
+    resize: none !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding-top: 5px; padding-bottom: 5px;
+}
+
+.toggle{
+    display: none;
+}
+.toggle + label{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    padding:2px;
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+    transition: all .25s;
+}
+.toggle + label::before{
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    height: calc(1.5rem - 4px);
+    width: calc(1.5rem - 4px);
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .25s;
+}
+.toggle:checked + label{
+    background-color: blueviolet;
+}
+.toggle:checked + label::before{
+    margin-left: 1.5rem;
 }

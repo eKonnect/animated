@@ -25,6 +25,8 @@
 
         <div class="ui-standard">
 
+            <div id="uiStandardMask"></div>
+
             <div class="bloc">
                 <p class="big-text">Paul</p>
                 <p class="medium-text">Compte inutile pour le moment</p>
@@ -44,7 +46,41 @@
         </div>
 
         <div class="ui-secondary">
-            <div class="mail"></div>
+            <div class="mail">
+
+                <form class="mail-submitfeedbackform" action="https://formspree.io/f/xzbywykr" method="POST">
+
+                    <label id="labelofInputUsernameMailSecondary">
+                        Nom d'utilisateur
+                        <br>
+                        <input title="💡 Le programme sait qui vous êtes. 💡" id="inputUsernameMailSecondary" type="email" name="_replyto" required value="monnomdutilisateur@example.com">
+                    </label>
+
+                    <br><br><br>
+
+                    <label>
+                        Avis
+                        <br>
+                        <textarea name="message" required></textarea>
+                    </label>
+
+                    <br><br><br>
+
+                    <label id="labelofCheckboxAnonymizationMailSecondary">
+                        Anonymisation
+                        <br><br>
+                        <input type="checkbox" class="toggle" id="checkboxAnonymizationMailSecondary">
+                        <label for="checkboxAnonymizationMailSecondary" onclick="if (anonymMailSecondary === false) {alert('Votre nom d\'utilisateur ne sera pas envoyé au serveur.'); anonymMailSecondary = true;} else {alert('Votre nom d\'utilisateur sera envoyé au serveur.'); anonymMailSecondary = false;}"></label>
+                    </label>
+
+                    <br><br><br>
+
+                    <button id="btnSubmitMailSecondary" type="submit">Envoyer</button>
+                    <button type="button" id="btnCloseMailSecondary" class="btn-snd">Annuler</button>
+
+                </form>
+
+            </div>
         </div>
 
     </div>
