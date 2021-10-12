@@ -128,3 +128,38 @@
         transform: rotate(180deg);
     }
 }
+
+@keyframes lisa {
+    from{
+        transform: scale(0) rotate(90deg);
+    }
+    /* 15%{
+        transform: scale(.2) rotateX(150deg);
+    } */
+    7.5%{
+        transform: scale(.5) rotate(0deg);
+    }
+    14%{
+        transform: scale(0) rotate(-90deg);
+    }
+    to{
+        transform: scale(0) rotate(0deg);
+    }
+}
+@keyframes lisadeux {
+    from{
+        transform: scale(0) rotate(-90deg);
+    }
+    /* 15%{
+        transform: scale(.2) rotateX(150deg);
+    } */
+    7.5%{
+        transform: scale(.5) rotate(0deg);
+    }
+    14%{
+        transform: scale(0) rotate(90deg);
+    }
+    to{
+        transform: scale(0) rotate(0deg);
+    }
+}

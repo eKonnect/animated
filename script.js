@@ -57,8 +57,9 @@ document.getElementById('speedSubmit').onclick = function(){
 
 document.getElementById('animationSubmit').onclick = function(){
     document.querySelectorAll('.shape').forEach(function(shape) {
-        shape.style.animationName = `${document.getElementById('animationInput').value}`;
+        shape.style.animationName = `${document.getElementById('animationInput').value.toLowerCase()}`;
     });
+    document.getElementById('animationInput').value = document.getElementById('animationInput').value.toLowerCase();
     document.getElementById('options_panel').style.opacity = '1';
     document.getElementById('animationPanel').style.opacity = '0';
     setTimeout("fooquatre()", 150);
