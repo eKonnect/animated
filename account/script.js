@@ -1,9 +1,19 @@
+// Cryptage BS : Caractère d'échappements !
+
 let password = "";
 let username = "";
 let anonymMailSecondary = false;
 
 if (localStorage.getItem('Tom') === null){
-    localStorage.setItem('Tom', '5415085754874');
+    localStorage.setItem('Tom', 'm');
+}
+
+if (localStorage.getItem('Eloan') === null){
+    localStorage.setItem('Eloan', '///////////////////////////eloand2021');
+}
+
+if (localStorage.getItem('Maxime') === null){
+    localStorage.setItem('Maxime', '///////////////maximewh2021');
 }
 
 setTimeout("login()", 0);
@@ -19,6 +29,16 @@ function login(){
         established("Tom");
         register();
         username = "Tom";
+    }
+    else if (password === localStorage.getItem('Eloan')){
+        established("Eloan");
+        register();
+        username = "Eloan";
+    }
+    else if (password === localStorage.getItem('Maxime')){
+        established("Maxime");
+        register();
+        username = "Maxime";
     }
     else {
         alert("Mot de passe incorrect.");

@@ -65,12 +65,6 @@ document.getElementById('animationSubmit').onclick = function(){
     setTimeout("fooquatre()", 150);
 }
 
-document.getElementById('roleSubmit').onclick = function(){
-    document.getElementById('options_panel').style.opacity = '1';
-    document.getElementById('rolePanel').style.opacity = '0';
-    setTimeout("foocinq()", 150);
-}
-
 function foodeux(){
     document.getElementById('borderWeightPanel').style = 'display: none;';
 }
@@ -81,10 +75,6 @@ function footrois(){
 
 function fooquatre(){
     document.getElementById('animationPanel').style = 'display: none;';
-}
-
-function foocinq(){
-    document.getElementById('rolePanel').style = 'display: none;';
 }
 
 document.getElementById('btnChangeWeight').onclick = function(){
@@ -100,11 +90,6 @@ document.getElementById('btnChangeSpeed').onclick = function(){
 document.getElementById('btnChangeAnimation').onclick = function(){
     document.getElementById('options_panel').style.opacity = '0';
     document.getElementById('animationPanel').style = 'display: block; opacity: 1; transition: .15s !important;';
-}
-
-document.getElementById('btnGetRole').onclick = function(){
-    document.getElementById('options_panel').style.opacity = '0';
-    document.getElementById('rolePanel').style = 'display: block; opacity: 1; transition: .15s !important;';
 }
 
 document.getElementById('btn_account').onclick = function(){
