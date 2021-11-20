@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-#superdiv{
+.splash-screen{
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
     margin: 0; padding: 0;
     z-index: 199999;
     background-color: rgb(31, 31, 31);
-    animation: superdiv 5s linear forwards;
+    animation: dnoneSplashScreen 5s linear forwards;
     display: flex;
     align-items: center; justify-content: center;
 }
 
-@keyframes superdiv {
+@keyframes dnoneSplashScreen {
     from{
         transform: translateX(0%);
         opacity: 1;
@@ -31,28 +31,36 @@
     }
 }
 
-#loading{
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+.splash-screen>.container{
     margin: 0; padding: 0;
-    /* background-color: rgb(10, 10, 10); */
-    background-color: rgb(25, 25, 25);
-    z-index: 200000;
-    opacity: 1;
-    animation: loading 1.5s forwards;
+    padding-top: 25px; padding-bottom: 10px;
+    padding-right: 20px; padding-left: 25px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+    border-radius: 12px;
 }
 
-@keyframes loading {
-    from{
-        opacity: 1;
-    }
-    75%{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
+.splash-screen>.container>.logo{
+    margin: 0; padding: 0;
+    margin-top: 75px;
+    margin-bottom: 15px;
+    margin-left: auto; margin-right: auto;
+    height: 150px; width: 150px;
+    pointer-events: none;
+}
+
+.splash-screen>.container>.app-name{
+    margin: 0; padding: 0;
+    margin-bottom: 75px;
+    margin-left: auto; margin-right: auto;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2.5px;
+    text-align: center;
 }
 
 .corner-btn-bar{
@@ -271,39 +279,6 @@
     box-shadow: 0 0 0 2px rgb(166, 79, 248);
     color: rgb(186, 112, 255);
     border: 2px solid rgb(166, 79, 248);
-}
-
-.welcome-logo{
-    height: 140px;
-    margin: 0; padding: 0;
-    /* margin-left: auto; margin-right: auto; */
-    transform: translateX(150px);
-    margin-top: -110px;
-    border: 3px solid;
-    border-radius: 50%;
-    animation: welcomeLogo 5s;
-    animation-delay: 1s;
-}
-
-@keyframes welcomeLogo {
-    from{
-        border-color: rgb(100, 100, 100);
-    }
-    to{
-        border-color: rgb(189, 189, 189);
-    }
-}
-
-.welcome-tip{
-    color: white;
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-    margin: 0; padding: 0;
-    /* margin-left: -300px; */
-    /* margin-left: auto; margin-right: auto; */
-    transform: translateX(-75px);
-    margin-top: 110px;
 }
 
 select{
