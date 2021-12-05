@@ -98,7 +98,8 @@ th{
     height: 75px;
     margin: 0; padding: 0;
     padding-left: 25px; padding-right: 25px;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,6 +111,7 @@ th{
 .navbar>.title{
     font-size: 25px;
     font-weight: 600;
+    color: white;
 }
 
 .navbar>.part-indicator{
@@ -135,6 +137,17 @@ th{
 .header>p{
     font-size: 100px;
     font-weight: 900;
+}
+
+.header>img{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    min-width: 100%;
+    width: auto;
+    margin: 0; padding: 0;
+    margin-left: auto; margin-right: auto;
+    z-index: -10;
 }
 
 .height{
