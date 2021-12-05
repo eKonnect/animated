@@ -217,3 +217,27 @@ th{
 .part-content>*{
     font-size: 20px;
 }
+
+@media screen and (max-width: 1350px){
+    .height{
+        padding-left: 20%; padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .height{
+        padding-left: 15%; padding-right: 15%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .height{
+        padding-left: 10%; padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .height{
+        padding-left: 5%; padding-right: 5%;
+    }
+}
