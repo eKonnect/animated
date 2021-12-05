@@ -29,3 +29,25 @@ document.onscroll = function(){
         document.querySelector('.navbar>.part-indicator').textContent = "Plan des kutĕlemeв";
     }
 }
+
+let displayImgCreated = false;
+let displayImgThis = null;
+
+function displayImg(path){
+    let img = document.createElement('DIV');
+    img.innerHTML = `<img src="${path}">`;
+    img.classList.add('display-img');
+    document.body.appendChild(img);
+    document.body.style.overflowY = 'hidden';
+    displayImgThis = img;
+    displayImgCreated = true;
+}
+
+document.body.onclick = function(){
+    if(displayImgCreated === true){
+        document.querySelector('.display-img').onclick = function(){
+            document.body.removeChild(displayImgThis);
+            document.body.style.overflowY = 'auto';
+        }
+    }
+}

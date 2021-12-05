@@ -31,7 +31,6 @@ body{
 img{
     width: 100%;
     margin: 0; padding: 0;
-    pointer-events: none;
 }
 
 table{
@@ -160,6 +159,7 @@ th{
     background-color: white;
     opacity: 0;
     z-index: 5;
+    overflow-y: auto;
     transition: .5s;
 }
 
@@ -218,6 +218,10 @@ th{
     font-size: 20px;
 }
 
+.height>img{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1350px){
     .height{
         padding-left: 20%; padding-right: 20%;
@@ -240,4 +244,28 @@ th{
     .height{
         padding-left: 5%; padding-right: 5%;
     }
+}
+
+.display-img{
+    position: fixed;
+    top: 0; left: 0;
+    /* max-width: 95%; max-height: 95%; */
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: center; justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.display-img>img{
+    max-width: 95%; max-height: 95%;
+    margin: 0; padding: 0;
+}
+
+.img-tooltip{
+    font-size: 15px;
+    text-align: right;
+    font-style: italic;
 }
