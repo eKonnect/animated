@@ -29,20 +29,19 @@ body{
 }
 
 img{
-    width: 95% !important;
+    width: 100%;
     margin: 0; padding: 0;
-    margin-left: 2.5%;
     pointer-events: none;
 }
 
 table{
-    width: 95%;
+    width: 100%;
     margin: 0; padding: 0;
     margin-left: auto; margin-right: auto;
     font-size: 20px;
     /* margin-top: 50px; */
     border-collapse: collapse;
-    border-radius: 11px;
+    border-radius: 8px;
     overflow: hidden;
     background-color: rgb(220, 220, 220);
 }
@@ -52,12 +51,12 @@ tr{
     text-indent: 10px;
 }
 tr:hover{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(205, 205, 205);
 }
 
 th{
     text-align: left;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(190, 190, 190);
 }
 
 .code{
@@ -144,6 +143,7 @@ th{
     width: 100%;
     height: max-content;
     margin: 0; padding: 0;
+    padding-left: 25%; padding-right: 25%;
     background-color: white;
     opacity: 0;
     z-index: 5;
@@ -155,7 +155,7 @@ th{
 }
 
 .height>.title{
-    width: 95%;
+    width: 100%;
     margin: 0; padding: 0;
     margin-left: auto; margin-right: auto;
     padding-top: 75px; padding-bottom: 75px;
@@ -165,16 +165,17 @@ th{
 }
 
 .height>.introduce{
-    width: 95%;
+    width: 100%;
     margin: 0; padding: 0;
     margin-left: auto; margin-right: auto;
     /* border: 2px dashed green; */
     font-size: 25px;
     text-align: justify;
+    line-height: 35px;
 }
 
 .part-title{
-    width: 95%;
+    width: 100%;
     margin: 0; padding: 0;
     margin-top: 100px;
     margin-left: auto; margin-right: auto;
@@ -189,7 +190,7 @@ th{
 }
 
 .part-content{
-    width: 95%;
+    width: 100%;
     margin: 0; padding: 0;
     margin-top: 30px;
     /* margin-top: 100px; */
