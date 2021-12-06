@@ -113,10 +113,6 @@ th{
     color: white;
 }
 
-.navbar>.part-indicator{
-    font-size: 25px;
-}
-
 .header{
     position: fixed;
     top: 100px;
@@ -205,8 +201,7 @@ th{
 .part-content{
     width: 100%;
     margin: 0; padding: 0;
-    margin-top: 30px;
-    /* margin-top: 100px; */
+    margin-top: 30px; margin-bottom: 30px;
     margin-left: auto; margin-right: auto;
     font-size: 20px;
     text-align: justify;
@@ -241,8 +236,39 @@ th{
 }
 
 @media screen and (max-width: 650px){
+    .navbar{
+        padding-left: 2.5%; padding-right: 2.5%;
+    }
     .height{
-        padding-left: 5%; padding-right: 5%;
+        padding-left: 2.5%; padding-right: 2.5%;
+    }
+    .height>.title{
+        padding-top: 55px; padding-bottom: 55px;
+        font-size: 65px;
+    }
+    .height>.introduce{
+        font-size: 22.5px;
+        line-height: 32.5px;
+    }
+    .part-title{
+        margin-top: 65px;
+        font-size: 30px;
+    }
+    .part-content{
+        font-size: 17.5px;
+        line-height: 26px;
+    }
+    .part-content>*{
+        font-size: 17.5px;
+        line-height: 26px;
+    }
+    .code{
+        font-size: 15px !important;
+    }
+    .img-tooltip{
+        font-size: 15px;
+        text-align: right;
+        font-style: italic;
     }
 }
 
@@ -260,6 +286,7 @@ th{
 }
 
 .display-img>img{
+    width: max-content; height: max-content;
     max-width: 95%; max-height: 95%;
     margin: 0; padding: 0;
 }

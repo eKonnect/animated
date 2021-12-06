@@ -21,13 +21,6 @@ document.onscroll = function(){
         document.querySelector('.navbar').style.backgroundColor = 'rgba(0, 0, 0, .6)';
         document.querySelector('.navbar').style.boxShadow = 'none';
     }
-    document.querySelector('.navbar>.part-indicator').textContent = "";
-    if (scrollY >= (document.getElementById('capital_individuel_part').getBoundingClientRect().top + 700)){
-        document.querySelector('.navbar>.part-indicator').textContent = "Capital individuel";
-    }
-    if (scrollY >= (document.getElementById('plan_des_kmgg_part').getBoundingClientRect().top + document.getElementById('capital_individuel_part').offsetTop + 900)){
-        document.querySelector('.navbar>.part-indicator').textContent = "Plan des kutĕlemeв";
-    }
 }
 
 let displayImgCreated = false;
