@@ -239,6 +239,9 @@ th{
     .navbar{
         padding-left: 2.5%; padding-right: 2.5%;
     }
+    .header>img{
+        display: none;
+    }
     .height{
         padding-left: 2.5%; padding-right: 2.5%;
     }
@@ -256,11 +259,9 @@ th{
     }
     .part-content{
         font-size: 17.5px;
-        line-height: 26px;
     }
     .part-content>*{
         font-size: 17.5px;
-        line-height: 26px;
     }
     .code{
         font-size: 15px !important;
