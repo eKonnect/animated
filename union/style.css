@@ -237,13 +237,19 @@ th{
 
 @media screen and (max-width: 650px){
     .navbar{
+        background-color: white !important;
         padding-left: 2.5%; padding-right: 2.5%;
     }
-    .header>img{
-        display: none;
+    .navbar>.title{
+        color: black !important;
     }
     .height{
+        top: 75px;
         padding-left: 2.5%; padding-right: 2.5%;
+        opacity: 1 !important;
+    }
+    .height>*{
+        opacity: 1 !important;
     }
     .height>.title{
         padding-top: 55px; padding-bottom: 55px;
