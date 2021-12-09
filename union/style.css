@@ -111,6 +111,7 @@ th{
     font-size: 25px;
     font-weight: 600;
     color: white;
+    text-align: center;
 }
 
 .header{
@@ -132,12 +133,16 @@ th{
 .header>p{
     font-size: 100px;
     font-weight: 900;
+    margin: 0; padding: 0;
+    background: linear-gradient(to right,#0BD 0%,#0C3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header>img{
     position: fixed;
-    top: 0;
-    height: 100%;
+    min-height: 100%;
     min-width: 100%;
     width: auto;
     margin: 0; padding: 0;
