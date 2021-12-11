@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 ::-webkit-scrollbar{
-    width: 16px;
+    width: 15px;
     background-color: rgb(230, 230, 230);;
 }
 
@@ -19,7 +19,7 @@
     user-select: none;
     scroll-behavior: smooth;
     font-family: 'inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0; padding: 0;
 }
 
@@ -36,9 +36,9 @@ img{
 table{
     width: 100%;
     margin: 0; padding: 0;
+    margin-bottom: 30px;
     margin-left: auto; margin-right: auto;
-    font-size: 20px;
-    /* margin-top: 50px; */
+    font-size: 18px;
     border-collapse: collapse;
     border-radius: 8px;
     overflow: hidden;
@@ -114,15 +114,15 @@ th{
     text-align: center;
 }
 
-.toggle-vocabulaire{
+.navbar>div{
     width: 50px; height: 50px;
     margin: 0; padding: 0;
     display: flex;
     align-items: center; justify-content: center;
     cursor: pointer;
 }
-.toggle-vocabulaire::before{
-    content: 'Langue';
+.navbar>div::before{
+    content: attr(data-tooltip);
     position: absolute;
     width: max-content;
     height: 30px;
@@ -138,11 +138,11 @@ th{
     pointer-events: none;
     font-size: 15px;
 }
-.toggle-vocabulaire:hover::before{
+.navbar>div:hover::before{
     display: flex;
 }
 
-.toggle-vocabulaire>img{
+.navbar>div>img{
     width: 40px; height: 40px;
     margin: 0; padding: 0;
     pointer-events: none;
@@ -165,20 +165,21 @@ th{
 }
 
 .header>p{
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 900;
     margin: 0; padding: 0;
     background: linear-gradient(to right,#0BD 0%,#0C3 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .header>img{
     position: fixed;
     min-height: 100%;
     min-width: 100%;
-    width: auto;
+    width: auto; height: auto;
     margin: 0; padding: 0;
     margin-left: auto; margin-right: auto;
     z-index: -10;
@@ -208,7 +209,7 @@ th{
     margin: 0; padding: 0;
     margin-left: auto; margin-right: auto;
     padding-top: 75px; padding-bottom: 75px;
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 700;
     text-align: center;
 }
@@ -218,43 +219,48 @@ th{
     margin: 0; padding: 0;
     margin-left: auto; margin-right: auto;
     /* border: 2px dashed green; */
-    font-size: 25px;
+    font-size: 18px;
     text-align: justify;
-    line-height: 35px;
+    line-height: 27.5px;
 }
 
 .part-title{
     width: 100%;
     margin: 0; padding: 0;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: auto; margin-right: auto;
     padding-top: 25px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
     /* border: 2px dashed green; */
     font-size: 35px;
     font-weight: 600;
     text-align: left;
     color: green;
-    border-top: 2px solid green;
 }
 
 .part-content{
     width: 100%;
     margin: 0; padding: 0;
-    margin-top: 30px; margin-bottom: 30px;
+    margin-bottom: 30px;
     margin-left: auto; margin-right: auto;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
     /* border: 2px dashed red; */
-    line-height: 30px;
+    line-height: 27.5px;
 }
 
 .part-content>*{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .height>img{
+    margin: 0; padding: 0;
     cursor: pointer;
+}
+
+.height>.img-tooltip{
+    margin: 0; padding: 0;
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 1350px){
