@@ -1,5 +1,5 @@
 document.onscroll = function(){
-    document.querySelector('.header>img').style.transform = `translateY(calc(-${scrollY}px / 6)) scale(calc(1 + ${scrollY} / 1000))`;
+    // document.querySelector('.header>img').style.transform = `translateY(calc(-${scrollY}px / 6)) scale(calc(1 + ${scrollY} / 1000))`;
     document.querySelector('.header>p').style.transform = `translateY(calc(-${scrollY}px / 3))`;
     document.querySelector('.header>p').style.opacity = `calc(100% - ${scrollY}% / 2)`;
     document.querySelectorAll('.height>*').forEach(function(element){
@@ -43,4 +43,11 @@ document.body.onclick = function(){
             document.body.style.overflowY = 'auto';
         }
     }
+}
+
+document.body.style.overflowY = 'hidden';
+
+document.querySelector('.btn-close-modal-physiquechimie').onclick = function(){
+    document.querySelector('.modal-mask').style.display = 'none';
+    document.body.style.overflowY = 'auto';
 }
