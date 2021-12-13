@@ -21,6 +21,7 @@
     font-family: 'inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     margin: 0; padding: 0;
+    -webkit-tap-highlight-color: rgba(230, 230, 230, 0) !important;
 }
 
 body{
