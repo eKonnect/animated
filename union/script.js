@@ -1,7 +1,8 @@
 document.onscroll = function(){
     // document.querySelector('.header>img').style.transform = `translateY(calc(-${scrollY}px / 6)) scale(calc(1 + ${scrollY} / 1000))`;
+    document.querySelector('.header>img').style.transform = `translateY(calc(-${scrollY}px / 6))`;
     document.querySelector('.header>p').style.transform = `translateY(calc(-${scrollY}px / 3))`;
-    document.querySelector('.header>p').style.opacity = `calc(100% - ${scrollY}% / 2)`;
+    // document.querySelector('.header>p').style.opacity = `calc(100% - ${scrollY}% / 2)`;
     document.querySelectorAll('.height>*').forEach(function(element){
         element.style.opacity = `calc(${scrollY}% / 2)`;
     });
